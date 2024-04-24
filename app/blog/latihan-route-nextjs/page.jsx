@@ -5,7 +5,7 @@ export default function PostPage() {
     <>
       <Heading>Latihan Route Nextjs</Heading>
       <img
-        src="/images/img.jpg"
+        src="/images/image-1.jpg"
         alt=""
         width={640}
         height={360}
