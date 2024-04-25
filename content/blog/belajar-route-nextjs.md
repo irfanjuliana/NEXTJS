@@ -1,7 +1,7 @@
 ---
-title: "Belajar Next.js"
+title: "Belajar route next js"
 description: "deskripsinya panjang bannget cuyyyyyyyyyy"
-image: "/images/image-1.jpg"
+image: "/images/image-2.jpg"
 date: "26/11/2023"
 author: "admin"
 ---
