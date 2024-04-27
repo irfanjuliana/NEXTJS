@@ -1,6 +1,13 @@
+import Image from "next/image";
 import Heading from "@/components/Heading";
 import ShareLinkButton from "@/components/ShareLinkButton";
 import { getPost, getSlugs } from "@/lib/post";
+import { notFound } from "next/navigation";
+
+//export const dynamic = "force-dynamic";
+export const revalidate = 30;
+
+// export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const slugs = await getSlugs();
@@ -8,7 +15,11 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params: { slug } }) {
+  console.log("slug", slug);
   const post = await getPost(slug);
+  if (!post) {
+    notFound();
+  }
   return {
     title: post.title,
     description: post.description,
@@ -17,6 +28,9 @@ export async function generateMetadata({ params: { slug } }) {
 
 export default async function PostPage({ params: { slug } }) {
   const post = await getPost(slug);
+  if (!post) {
+    notFound();
+  }
   return (
     <>
       <Heading>{post.title}</Heading>
@@ -26,7 +40,7 @@ export default async function PostPage({ params: { slug } }) {
         </p>
         <ShareLinkButton />
       </div>
-      <img
+      <Image
         src={post.image}
         alt=""
         width={640}

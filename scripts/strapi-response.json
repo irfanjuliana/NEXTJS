@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "id": 5,
+      "attributes": {
+        "slug": "belajar-strapi-39",
+        "title": "belajar strapi-39",
+        "description": "Konten strapi-39",
+        "publishedAt": "2024-04-27T06:32:34.360Z",
+        "author": "aim",
+        "body": "di sini adalah deskripsi **Bold**",
+        "image": {
+          "data": {
+            "id": 1,
+            "attributes": {
+              "url": "/uploads/image_1_fb5498e969.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "slug": "belajar-strapi-33",
+        "title": "belajar strapi-33",
+        "description": "Konten strapi-33",
+        "publishedAt": "2024-04-27T06:32:01.396Z",
+        "author": "admin",
+        "body": "di sini adalah deskripsi **Bold**",
+        "image": {
+          "data": {
+            "id": 1,
+            "attributes": {
+              "url": "/uploads/image_1_fb5498e969.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 1,
+      "attributes": {
+        "slug": "belajar-strapi",
+        "title": "belajar strapi UPDATE",
+        "description": "Konten strapi",
+        "publishedAt": "2024-04-27T06:16:07.038Z",
+        "author": "admin",
+        "body": "di sini adalah deskripsi **Bold**",
+        "image": {
+          "data": {
+            "id": 1,
+            "attributes": {
+              "url": "/uploads/image_1_fb5498e969.jpg"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 3,
+      "pageCount": 2,
+      "total": 5
+    }
+  }
+}
